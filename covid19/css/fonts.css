@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Wallpoet";
+
+    /* IE9 Compat Modes */
+    src: url("../fonts/wallpoet-v11-latin/wallpoet-v11-latin-regular.eot");
+    /* IE6-IE8 */
+    src: url("../fonts/wallpoet-v11-latin/wallpoet-v11-latin-regular.eot?#iefix")format("embedded-opentype"),
+        /* Новейшие браузеры */
+        url("../fonts/wallpoet-v11-latin/wallpoet-v11-latin-regular.woff2")format("woff2"),
+        /* Новые браузеры и IE9+ */
+        url("../fonts/wallpoet-v11-latin/wallpoet-v11-latin-regular.woff")format("woff"),
+        /* Старые Safari, Android, iOS */
+        url("../fonts/wallpoet-v11-latin/wallpoet-v11-latin-regular.ttf")format("truetype"),
+        /* Древние Safari, iOS, Android */
+        url("../fonts/wallpoet-v11-latin/wallpoet-v11-latin-regular.svg")format("svg");
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: "Tomorrow";
+
+    /* IE9 Compat Modes */
+    src: url("../fonts/tomorrow-v2-latin/tomorrow-v2-latin-regular.eot");
+    /* IE6-IE8 */
+    src: url("../fonts/tomorrow-v2-latin/tomorrow-v2-latin-regular.eot?#iefix")format("embedded-opentype"),
+        /* Новейшие браузеры */
+        url("../fonts/tomorrow-v2-latin/tomorrow-v2-latin-regular.woff2")format("woff2"),
+        /* Новые браузеры и IE9+ */
+        url("../fonts/tomorrow-v2-latin/tomorrow-v2-latin-regular.woff")format("woff"),
+        /* Старые Safari, Android, iOS */
+        url("../fonts/tomorrow-v2-latin/tomorrow-v2-latin-regular.ttf")format("truetype"),
+        /* Древние Safari, iOS, Android */
+        url("../fonts/tomorrow-v2-latin/tomorrow-v2-latin-regular.svg")format("svg");
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: "Walter";
+    /* Старые Safari, Android, iOS */
+    src: url("../fonts/Walter_Turncoat/WalterTurncoat-Regular.ttf")format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: "Gayathri";
+
+    /* IE9 Compat Modes */
+    src: url("../fonts/gayathri-v1-latin/gayathri-v1-latin-regular.eot");
+    /* IE6-IE8 */
+    src: url("../fonts/gayathri-v1-latin/gayathri-v1-latin-regular.eot?#iefix")format("embedded-opentype"),
+        /* Новейшие браузеры */
+        url("../fonts/gayathri-v1-latin/gayathri-v1-latin-regular.woff2")format("woff2"),
+        /* Новые браузеры и IE9+ */
+        url("../fonts/gayathri-v1-latin/gayathri-v1-latin-regular.woff")format("woff"),
+        /* Старые Safari, Android, iOS */
+        url("../fonts/gayathri-v1-latin/gayathri-v1-latin-regular.ttf")format("truetype"),
+        /* Древние Safari, iOS, Android */
+        url("../fonts/gayathri-v1-latin/gayathri-v1-latin-regular.svg")format("svg");
+    font-style: normal;
+    font-weight: normal;
+
+}

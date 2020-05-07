@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Верстка из Youtoube, по уроку (Flex CSS, верстка Landingpage) из
+    канала Виталий Менчуковский-->
+    <!--Макет с адаптацией под формат экрана (под
+    попорции экрана)-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site02 on Flex-Box</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div
+        id="header-about"
+        class="main_flex__nowrap flex__align-items_center flex__jcontent_start"
+      >
+        <div id="logo">
+          <!-- <img src="./img/logo/small/covlogo80px.png" alt="COVID‑19" /> -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="74.957"
+            height="74.957"
+            viewBox="0 0 512 512"
+          >
+            <metadata>
+              <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+              <x:xmpmeta
+                xmlns:x="adobe:ns:meta/"
+                x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "
+              >
+                <rdf:RDF
+                  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                >
+                  <rdf:Description rdf:about="" />
+                </rdf:RDF>
+              </x:xmpmeta>
+
+              <?xpacket end="w"?>
+            </metadata>
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: rgba(236, 106, 106, 0.692);
+                  fill-rule: evenodd;
+                }
+              </style>
+            </defs>
+            <image
+              id="Слой_1"
+              data-name="Слой 1"
+              x="1"
+              y="1"
+              width="511"
+              height="511"
+              xlink:href="data:img/png;base64,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"
+            />
+            <path
+              id="Заливка_цветом_1"
+              data-name="Заливка цветом 1"
+              class="cls-1"
+              d="M252,14c33.349-.516,37.072,39.956,11,50,0.357,19.382,4.231,53.633-4,66-5.661-.21-6.714-1.084-10-3q-0.5-31.5-1-63C218.781,50.954,229.043,25.479,252,14Zm1,15-6,4q-1,4.5-2,9l7,8,8-1,6-5q-0.5-4-1-8c-1.65-3.655-2.389-4.31-6-6ZM98,71c16.826,0.316,33.26,10.712,29,31l-3,7,27,26c13.346-9.43,59.795-44.539,80-31q-0.5,4-1,8c-24.87,10.819-51.253,15.467-68,34,2.936,3.578,7.109,6.213,5,12-1.737,4.062-4.4,5.911-9,4l-44-43C77.414,134.831,62.359,88.536,98,71Zm308,0c22.523-.169,38.234,22.572,24,42-4.186,5.713-23.593,14.533-32,6l-26,27,4,4,9,11c16.8-8.145,41.633,5.374,36,28-4.568,18.349-25.517,24.84-42,14-5.561,5.151-22.26,18.945-31,16-3.289-1.643-3.193-2.032-5-5,3.307-13.1,19.767-15.582,28-24-0.777-7.023,2.02-14.437,1-19-5.964-16.062-10.261-10.015-23-8l-5-4q0.5-3.5,1-7l42-44C378.623,87.657,391.823,78.178,406,71ZM99,86l-6,4-2,9,7,8,8-1,6-5q-0.5-4-1-8c-1.65-3.655-2.389-4.31-6-6Zm308,0-6,4q-1,4.5-2,9l7,8,8-1,6-5q-0.5-4-1-8c-1.65-3.655-2.389-4.31-6-6ZM278,99c24.5-.43,60.638,13.331,70,29l-3,8-6,1-32-17c-10.215-4.018-23.42-4.584-32-10v-8Zm-67,49c33.962-.723,37.68,44.157,9,51C187.4,206.778,178.183,163.83,211,148Zm82,8c26.151-.448,30.28,34.411,8,40C274.89,202.55,267.781,169.13,293,156Zm-163,5,8,4v1c-0.934,15.548-14,31.044-20,45l22,10c1.284,6.557.045,7.8-3,12h-1c-12.627-.631-24.239-8.1-34-13-14.874,11.988-53.314,10.311-45-22,8.9-34.588,37.259-17.208,51-1C110.627,183.6,120.452,168.142,130,161Zm82,2-6,4q-1,4.5-2,9l7,8,8-1,6-5q-0.5-4-1-8c-1.65-3.655-2.389-4.31-6-6Zm82,8-3,4,3,6h5l2-2q-0.5-2.5-1-5c-1.392-1.923-.1-0.6-2-2Zm99,2-6,4q-1,4.5-2,9l7,8,8-1,6-5q-0.5-4-1-8c-1.65-3.655-2.389-4.31-6-6ZM79,193c-5.934,5.154-8.308,8.709-5,18,9.264,4.92,14.891,2.435,19-6l-1-6-6-5Zm190,25c40.237-.573,44,52.992,10,61-29.883,7.039-45.733-29.042-31-49C252.925,223.329,260.775,221.572,269,218Zm146,32h34c7.27-25.889,45.294-21.154,50,4,3.609,19.292-18.774,34.361-36,27-7.3-3.118-10.047-10.534-15-16-18.862.315-50.554,3.993-64-3V252l3-1,13-1c-0.443-12.124-4.174-21.892,0-30h10C413.479,227.843,414.924,238.666,415,250ZM175,225c15.187,0.041,23.516,8.161,23,24-4.334,12.386-23.167,23.923-35,10C150.42,244.2,163.559,231.048,175,225Zm94,8-11,9c-0.671,6.351-.414,9.577,1,15,7.029,5.583,11.836,8.1,23,5,3.776-5.115,5.963-7.494,6-17-2.271-4.744-4.147-7.769-9-10Zm-93,7-3,4,3,6h5l2-2q-0.5-2.5-1-5c-1.392-1.923-.1-0.6-2-2ZM99,288c-0.989-11.954-8.528-39.56,2-46l5-1a11.144,11.144,0,0,1,4,4q2,20,4,40c9.408-1.693,15.5-2.562,22,2v1l-3,9L72,307c-5.977,27.964-45.468,28.208-51,0-3.849-19.625,18.657-34.419,36-27l13,12Zm370-41-6,6q0.5,4,1,8c2.006,4.361,3.671,5.027,8,7l10-4q1-2.5,2-5-0.5-3-1-6l-6-6h-8ZM345,267c9.454,0.2,13.4,3.292,19,7,9.055,24.2-8.682,41.459-31,27-3.879-9.284-5.042-14.291-2-25C335.518,272.693,339.824,270.244,345,267Zm57,12h6l4,4c-0.547,20.279-16.162,36.441-15,51l19,12c23.949-15.787,54.009,11.854,36,36-16.55,22.19-49,4.239-45-24l-51-36q0.5-4,1-8l3-1c9.131-3.15,16,7.45,24,10C387.389,311.583,394,287.364,402,279Zm-56,3-3,4,3,6h5l2-2-1-5c-1.392-1.923-.1-0.6-2-2ZM44,293c-3.387,2.476-5.04,2.9-7,7-3.22,9.067,3.23,14.328,13,14,4.351-2.524,9.293-7.041,6-14-1.65-3.655-2.389-4.31-6-6Zm143,10c26.151-.448,30.28,34.411,8,40C168.89,349.55,161.781,316.13,187,303Zm83,4c33.962-.723,37.68,44.157,9,51C246.4,365.778,237.183,322.83,270,307Zm-157,3,9,1c7.479,16.147,16.671,34.584,30,45,5.356-3.9,9.036-4.888,15-1q0.5,3,1,6l-44,45c14.743,30.619-28.475,49.883-44,26-11.148-17.148,2.572-36.627,18-40l16,3,27-28c-8.041-10.5-35.38-35.727-31-52Zm75,8-3,4,3,6h5l2-2q-0.5-2.5-1-5c-1.392-1.923-.1-0.6-2-2Zm83,4-6,4q-1,4.5-2,9l7,8,8-1,6-5q-0.5-4-1-8c-1.65-3.655-2.389-4.31-6-6Zm98,25c4.957,0.551,5.791.873,8,4,1.458,2.428,1.652,2.393,1,5-3.23,10.289-15.248,16.733-22,24,27.421,2.344,28.6,40.667,6,49-16.926,6.24-30.9-6.618-34-18l3-22-13-19c0.848-4.307,1.07-4.924,4-7,8.436-5.092,12.144,5.443,17,10h2Zm58,9c-6.2,6.044-6.983,11.331-2,19,5.813,1.251,7.188,1.234,13,0l4-5q-0.5-4-1-8l-5-6h-9ZM175,378c17.932,2.552,34.055,15.028,54,20,2.822,5.382,4.142,9.653-2,13-12.974,4.9-52.267-16.417-58-24C170.193,381.332,171.6,381.055,175,378Zm88,22c17.274-.739,36.943-11.37,49-5,0.543,5.594.308,6.759-2,11-14.606,3.739-28.689,8.457-47,9v36c26.288,4.592,20.387,43.82-2,49-33.907,7.845-39.712-41.53-13-49-0.4-15.323-5.15-57.889,4-65,4.262-2.74,6.123-1.383,10,1Q262.5,393.5,263,400Zm89-6a39.4,39.4,0,0,0-9,7q0.5,4,1,8l5,6c8.66,0.106,9.537-1.638,14-5q0.5-3.5,1-7C360.35,397.754,359.4,395.783,352,394ZM99,407l-6,4-2,9,7,8,8-1,6-5q-0.5-4-1-8c-1.65-3.655-2.389-4.31-6-6Zm154,57-6,4q-1,4.5-2,9l7,8,8-1,6-5q-0.5-4-1-8c-1.65-3.655-2.389-4.31-6-6Z"
+            />
+          </svg>
+        </div>
+        <div
+          class="logo-text wrap main_flex__nowrap flex__align-items_center flex__jcontent_start"
+        >
+          Disease Information Page:
+        </div>
+      </div>
+      <div class="header-logo"><h1>COVID 19</h1></div>
+      <div class="main-bar">
+        <nav
+          class="wrap main_flex__nowrap flex__align-items_center flex__jcontent_between"
+        >
+          <li><a href="#header">Home</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#prevention">Prevention</a></li>
+          <li><a href="#symptoms">Symptoms</a></li>
+          <li><a href="#map">Map</a></li>
+          <li><a href="#about">About</a></li>
+        </nav>
+      </div>
+    </div>
+    <div id="overview">
+      <div class="title">
+        <h2>Owerview</h2>
+        <div
+          class="dec main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_between"
+        >
+          <div class="line"></div>
+        </div>
+      </div>
+      <div
+        class="wrap main_flex__nowrap flex__jcontent_between flex__align-items_start"
+      >
+        <div class="title_overview">
+          <p class="textcolor2">Stay</p>
+          <p class="textcolor2">informed:</p>
+          <p class="textcolor">Covid-19</p>
+        </div>
+        <div class="text_overview">
+          <p>
+            Coronavirus disease <strong>(COVID-19)</strong> is an infectious
+            disease caused by a newly discovered coronavirus.
+          </p>
+          <p>
+            Most people infected with the COVID-19 virus will experience mild to
+            moderate respiratory illness and recover without requiring special
+            treatment. Older people, and those with underlying medical problems
+            like cardiovascular disease, diabetes, chronic respiratory disease,
+            and cancer are more likely to develop serious illness.
+          </p>
+          <p>
+            The best way to prevent and slow down transmission is be well
+            informed about the COVID-19 virus, the disease it causes and how it
+            spreads. Protect yourself and others from infection by
+            <strong
+              >washing your hands or using an alcohol based rub frequently and
+              not touching your face</strong
+            >
+            .
+          </p>
+          <p>
+            The COVID-19 virus spreads primarily through droplets of saliva or
+            discharge from the nose when an infected person coughs or sneezes,
+            so it’s important that you also practice respiratory etiquette (for
+            example, by coughing into a flexed elbow).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="prevention">
+      <div class="title">
+        <h2 id="white-title">Prevention</h2>
+        <div
+          class="dec main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_between"
+        >
+          <div class="line"></div>
+        </div>
+      </div>
+        <div class="wrap">
+          <div
+            class="block-prevention main_flex__nowrap flex__jcontent_between"
+          >
+            <div class="box_block_prevention box-shadow">
+              <img src="./img/cov9.jpg" alt="" />
+            </div>
+            <div class="box_block_prevention ptext1 box-shadow">
+              <p>
+                Wash your hands regularly with soap and water, or clean them
+                with alcohol-based hand rub.
+              </p>
+            </div>
+          </div>
+          <div
+            class="block-prevention main_flex__nowrap flex__jcontent_between"
+          >
+            <div class="box_block_prevention ptext2 box-shadow">
+              <p>
+                Maintain at least 1 metre distance between you and people
+                coughing or sneezing.
+              </p>
+            </div>
+            <div class="box_block_prevention box-shadow">
+              <img src="./img/cov6.jpg" alt="" />
+            </div>
+          </div>
+          <div
+            class="block-prevention main_flex__nowrap flex__jcontent_between"
+          >
+            <div class="box_block_prevention box-shadow">
+              <img src="./img/cov11.jpg" alt="" />
+            </div>
+            <div class="box_block_prevention ptext3 box-shadow">
+              <p>
+                Stay home if you feel unwell.
+              </p>
+            </div>
+          </div>
+          <div
+            class="block-prevention main_flex__nowrap flex__jcontent_between"
+          >
+            <div class="box_block_prevention ptext4 box-shadow">
+              <p>
+                Avoid touching your face. Cover your mouth and nose when
+                coughing or sneezing.
+              </p>
+            </div>
+            <div class="box_block_prevention box-shadow">
+              <img src="./img/cov4.jpg" alt="" />
+            </div>
+          </div>
+          <div
+            class="block-prevention main_flex__nowrap flex__jcontent_between"
+          >
+            <div class="box_block_prevention box-shadow">
+              <img src="./img/cov15.jpg" alt="" />
+            </div>
+            <div class="box_block_prevention ptext5 box-shadow">
+              <p>
+                Practice physical distancing by avoiding unnecessary travel and
+                staying away from large groups of people.
+              </p>
+            </div>
+          </div>
+          <div
+            class="block-prevention main_flex__nowrap flex__jcontent_between"
+          >
+            <div class="box_block_prevention ptext6 box-shadow">
+              <p>
+                Refrain from smoking and other activities that weaken the lungs.
+              </p>
+            </div>
+            <div class="box_block_prevention box-shadow">
+              <img src="./img/cov13.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="symptoms">
+      <div class="title">
+        <h2>Symptoms</h2>
+        <div
+          class="dec main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_between"
+        >
+          <div class="line"></div>
+        </div>
+      </div>      
+      <div class="wrap main_flex__nowrap flex__jcontent_between">
+        <div class="text-box-smt wrap main_flex__nowrap flex__jcontent_between">
+          <div class="symptoms-text1">
+            <p> <strong>COVID-19</strong> affects different people in different ways. Most infected people will develop mild to moderate illness and
+            recover without hospitalization.</p>
+            <p>Seek immediate medical attention if you have serious symptoms. Always call before visiting your doctor or health
+            facility.</p>
+            <p>People with mild symptoms who are otherwise healthy should manage their symptoms at home.</p>
+            <p>On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take
+            up to 14 days.</p>
+          
+          </div>
+          <div class="symptoms-text2">
+            <p> <strong> Most common symptoms:</strong></p>
+            <ul>
+              <li>fever</li>
+              <li>dry cough</li>
+              <li>tiredness</li>
+            </ul>
+            <p> <strong> Serious symptoms:</strong></p>
+            <ul>
+              <li>difficulty breathing or shortness of breath</li>
+              <li>chest pain or pressure</li>
+              <li>loss of speech or movement</li>
+            </ul>           
+          </div>
+        </div>
+      </div>
+        <div class="box-smt-img main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_center">
+          <div class="img-smt">
+            <img src="./img/cov7.jpeg" alt="">
+          </div>
+          <div class="img-smt">
+            <img src="./img/cov5.jpeg" alt="">
+          </div>
+          <div class="img-smt">
+            <img src="./img/cov10.jpeg" alt="">
+          </div>          
+          <div class="img-smt">
+            <img src="./img/cov7.jpeg" alt="">
+          </div>
+          <div class="img-smt">
+            <img src="./img/cov5.jpeg" alt="">
+          </div>
+        </div>
+    </div>
+    
+    <div id="map">
+      <div class="title">
+        <h2 id="white-title">Map</h2>
+        <div
+          class="dec main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_between"
+        >
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="map-header main_flex__nowrap  flex__jcontent_center">
+        <p>This map is taken from “Johns Hopkins University” official site:
+         </p>        
+      </div>
+      <div class="jhu main_flex__nowrap  flex__jcontent_center">
+          <p>https://coronavirus.jhu.edu</p>
+          
+        </div>
+      <div class="map-box main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_center">
+       
+        <div class="map">
+          <iframe width="650" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="2019-nCoV"
+          src="//arcgis.com/apps/Embed/index.html?webmap=14aa9e5660cf42b5b4b546dec6ceec7c&extent=77.3846,11.535,163.5174,52.8632&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light">
+        </iframe>
+        </div>
+        
+      </div>
+    </div>
+    <div id="about">
+      <div class="title">
+        <h2>About</h2>
+        <div
+          class="dec main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_between"
+        >
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="wrap main_flex__nowrap flex__jcontent_between flex__align-items_start">
+        <div class="about-info">
+          <h2>About</h2>
+          <p>            
+            If you want to help this project, you can donate:
+            <br>
+            <span>
+            IBAN: UA54 3052 9900 0002 6206 8717 0261 3
+            
+            </span>
+          </p>
+        </div>
+        <div class="about-form">
+          <form action="" name="Feedback" id="form-feed">
+            <input type="text" placeholder="name">
+            <input type="text" placeholder="phone">
+            <input type="email" placeholder="email">
+            <textarea type="text" placeholder="Feedback" ></textarea>
+            <button type="submit" class="btn" >Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
