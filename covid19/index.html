@@ -10,6 +10,12 @@
     <title>Site02 on Flex-Box</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.js" integrity="sha256-oYqpLeqZe9cetUDV+TFiBZHp3uJ+X4F5eLs4W6uSTSE="
+      crossorigin="anonymous"></script>
+    <script src="./js/control.js"></script>
+    <script src="./js/slick.min.js"></script>
   </head>
   <body>
     <div id="header">
@@ -73,10 +79,10 @@
         </div>
       </div>
       <div class="header-logo"><h1>COVID 19</h1></div>
-      <div class="main-bar">
+      <div id="main-bar">
         <nav
-          class="wrap main_flex__nowrap flex__align-items_center flex__jcontent_between"
-        >
+          class="main-bar-li wrap main_flex__nowrap flex__align-items_center flex__jcontent_between"
+          >
           <li><a href="#header">Home</a></li>
           <li><a href="#overview">Overview</a></li>
           <li><a href="#prevention">Prevention</a></li>
@@ -87,8 +93,8 @@
       </div>
     </div>
     <div id="overview">
-      <div class="title">
-        <h2>Owerview</h2>
+      <div class="title overview-title">
+        <h2>Overview</h2>
         <div
           class="dec main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_between"
         >
@@ -97,6 +103,7 @@
       </div>
       <div
         class="wrap main_flex__nowrap flex__jcontent_between flex__align-items_start"
+        id="overview-box"
       >
         <div class="title_overview">
           <p class="textcolor2">Stay</p>
@@ -144,11 +151,8 @@
           <div class="line"></div>
         </div>
       </div>
-        <div class="wrap">
-          <div
-            class="block-prevention main_flex__nowrap flex__jcontent_between"
-          >
-            <div class="box_block_prevention box-shadow">
+        <div class="box_block wrap main_flex__nowrap flex__align-items_end" id="slider2">
+            <div class="box_block_prevention wrap box-shadow">
               <img src="./img/cov9.jpg" alt="" />
             </div>
             <div class="box_block_prevention ptext1 box-shadow">
@@ -157,23 +161,22 @@
                 with alcohol-based hand rub.
               </p>
             </div>
+          
+            
+          
+          <div class="box_block_prevention box-shadow">
+            <img src="./img/cov6.jpg" alt="" />
           </div>
-          <div
-            class="block-prevention main_flex__nowrap flex__jcontent_between"
-          >
+
             <div class="box_block_prevention ptext2 box-shadow">
               <p>
                 Maintain at least 1 metre distance between you and people
                 coughing or sneezing.
               </p>
             </div>
-            <div class="box_block_prevention box-shadow">
-              <img src="./img/cov6.jpg" alt="" />
-            </div>
-          </div>
-          <div
-            class="block-prevention main_flex__nowrap flex__jcontent_between"
-          >
+            
+          
+          
             <div class="box_block_prevention box-shadow">
               <img src="./img/cov11.jpg" alt="" />
             </div>
@@ -182,23 +185,19 @@
                 Stay home if you feel unwell.
               </p>
             </div>
-          </div>
-          <div
-            class="block-prevention main_flex__nowrap flex__jcontent_between"
-          >
+          
+          
+            <div class="box_block_prevention box-shadow">
+              <img src="./img/cov4.jpg" alt="" />
+            </div>
             <div class="box_block_prevention ptext4 box-shadow">
               <p>
                 Avoid touching your face. Cover your mouth and nose when
                 coughing or sneezing.
               </p>
             </div>
-            <div class="box_block_prevention box-shadow">
-              <img src="./img/cov4.jpg" alt="" />
-            </div>
-          </div>
-          <div
-            class="block-prevention main_flex__nowrap flex__jcontent_between"
-          >
+                    
+          
             <div class="box_block_prevention box-shadow">
               <img src="./img/cov15.jpg" alt="" />
             </div>
@@ -208,24 +207,22 @@
                 staying away from large groups of people.
               </p>
             </div>
+          
+          <div class="box_block_prevention box-shadow">
+            <img src="./img/cov13.jpg" alt="" />
           </div>
-          <div
-            class="block-prevention main_flex__nowrap flex__jcontent_between"
-          >
             <div class="box_block_prevention ptext6 box-shadow">
               <p>
                 Refrain from smoking and other activities that weaken the lungs.
               </p>
             </div>
-            <div class="box_block_prevention box-shadow">
-              <img src="./img/cov13.jpg" alt="" />
-            </div>
-          </div>
+            
+          
         </div>
       </div>
     </div>
     <div id="symptoms">
-      <div class="title">
+      <div class="title symptoms-title">
         <h2>Symptoms</h2>
         <div
           class="dec main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_between"
@@ -261,8 +258,8 @@
           </div>
         </div>
       </div>
-        <div class="box-smt-img main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_center">
-          <div class="img-smt">
+      <div class="wrap main_flex__nowrap flex__jcontent_between flex__align-items_stretch" id="slider" >
+            <div class="img-smt">
             <img src="./img/cov7.jpeg" alt="">
           </div>
           <div class="img-smt">
@@ -277,11 +274,24 @@
           <div class="img-smt">
             <img src="./img/cov5.jpeg" alt="">
           </div>
-        </div>
+          <div class="img-smt">
+            <img src="./img/cov5.jpeg" alt="">
+          </div>
+          <div class="img-smt">
+            <img src="./img/cov10.jpeg" alt="">
+          </div>
+          <div class="img-smt">
+            <img src="./img/cov7.jpeg" alt="">
+          </div>
+          <div class="img-smt">
+            <img src="./img/cov5.jpeg" alt="">
+          </div>        
+      </div>
+        
     </div>
     
     <div id="map">
-      <div class="title">
+      <div class="title map-title">
         <h2 id="white-title">Map</h2>
         <div
           class="dec main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_between"
@@ -308,7 +318,7 @@
       </div>
     </div>
     <div id="about">
-      <div class="title">
+      <div class="title about-title">
         <h2>About</h2>
         <div
           class="dec main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_between"
@@ -316,7 +326,7 @@
           <div class="line"></div>
         </div>
       </div>
-      <div class="wrap main_flex__nowrap flex__jcontent_between flex__align-items_start">
+      <div class="form-box wrap main_flex__nowrap flex__jcontent_between flex__align-items_start">
         <div class="about-info">
           <h2>About</h2>
           <p>            
